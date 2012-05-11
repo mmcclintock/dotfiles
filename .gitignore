@@ -1,0 +1,11 @@
+*~
+*.errors
+*.hi
+*.o
+*-linux
+*.swp
+*.netr*
+*.png
+*.svg
+/vim/swap/*
+/vim/backup/*

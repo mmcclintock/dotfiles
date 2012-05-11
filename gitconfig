@@ -1,0 +1,11 @@
+[color]
+	ui = true
+[user]
+	email = michael.ross.mcclintock@gmail.com
+	name = Michael McClintock
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	last = log -1 HEAD
