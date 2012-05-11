@@ -25,6 +25,7 @@ if has("gui_running")
         set guifont=Consolas:h11:cANSI
     endif
 endif
+
 set background=dark
 colorscheme vividchalk
 set showmode
