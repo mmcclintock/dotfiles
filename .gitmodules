@@ -34,3 +34,6 @@
 	path = vim/bundle/vim-markdown
 	url = git://github.com/tpope/vim-markdown.git
     ignore = dirty
+[submodule "vim/bundle/LaTeX-Box"]
+	path = vim/bundle/LaTeX-Box
+	url = git://github.com/vim-scripts/LaTeX-Box.git
