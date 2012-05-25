@@ -27,7 +27,7 @@ if has("gui_running")
 endif
 
 set background=dark
-colorscheme vividchalk
+colorscheme skittles_berry
 set showmode
 set cursorline
 if has('cmdline_info')
@@ -65,7 +65,7 @@ set softtabstop=4
 set incsearch
 set autoread
 set autowrite
-set textwidth=85
+set textwidth=78
 set timeoutlen=1200
 set ttimeoutlen=50
 
