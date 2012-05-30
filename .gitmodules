@@ -38,3 +38,7 @@
 	path = vim/bundle/LaTeX-Box
 	url = git://github.com/vim-scripts/LaTeX-Box.git
     ignore = dirty
+[submodule "vim/bundle/mustache"]
+	path = vim/bundle/mustache
+	url = git://github.com/juvenn/mustache.vim.git
+    ignore = dirty
