@@ -12,9 +12,6 @@ xset fp rehash
 # add xresources
 xrdb -merge ~/.Xresources
 
-# autosizing vmware guest
-vmware-user-suid-wrapper &
-
 # restore sound level
 alsactl restore -f ~/.asound
 

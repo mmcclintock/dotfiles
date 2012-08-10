@@ -12,7 +12,8 @@ URxvt*borderLess:				false
 URxvt*depth:					32
 URxvt*background:				rgba:0000/0000/0000/dddd
 URxvt*scrollBar:                false
-URxvt*font:					    xft:DejaVu Sans Mono-11
+!URxvt*font: xft:DejaVu Sans Mono-9
+URxvt*font: xft:Linux Libertine Mono-9
 !URxvt*font: -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
 !URxvt*fontBold: -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso10646-1
 URxvt*cursorBlink:				true

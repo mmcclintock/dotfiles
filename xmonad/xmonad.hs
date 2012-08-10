@@ -8,7 +8,6 @@
 --
 
 import XMonad
-import XMonad.Layout.LayoutHints
 import Data.Monoid
 import System.Exit
 
@@ -48,8 +47,8 @@ myWorkspaces    = ["1","2","3","4","5","6","7","8","9"]
 
 -- Border colors for unfocused and focused windows, respectively.
 --
-myNormalBorderColor  = "#dddddd"
-myFocusedBorderColor = "#ff0000"
+myNormalBorderColor  = "#004400"
+myFocusedBorderColor = "#00ff00"
 
 ------------------------------------------------------------------------
 -- Key bindings. Add, modify or remove key bindings here.
@@ -165,7 +164,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 -- The available layouts.  Note that each layout is separated by |||,
 -- which denotes layout choice.
 --
-myLayout = layoutHints (Tall 1 (3/100) (1/2)) ||| tiled ||| Mirror tiled ||| Full
+myLayout = tiled ||| Mirror tiled ||| Full
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
