@@ -70,6 +70,8 @@ set timeoutlen=1200
 set ttimeoutlen=50
 
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+let g:haddock_browser="/usr/bin/chromium"
+au BufEnter *.hs compiler ghc
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>

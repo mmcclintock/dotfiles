@@ -42,3 +42,7 @@
 	path = vim/bundle/neco-ghc
 	url = git://github.com/ujihisa/neco-ghc.git
   ignore = dirty
+[submodule "vim/bundle/vimproc"]
+	path = vim/bundle/vimproc
+	url = git://github.com/Shougo/vimproc.git
+  ignore = dirty
