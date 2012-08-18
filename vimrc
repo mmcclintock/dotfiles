@@ -27,7 +27,7 @@ if has("gui_running")
 endif
 
 set background=dark
-colorscheme molokai
+colorscheme zenzike
 set showmode
 set cursorline
 if has('cmdline_info')
@@ -72,6 +72,14 @@ set ttimeoutlen=50
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 let g:haddock_browser="/usr/bin/chromium"
 let g:neocomplcache_enable_at_startup = 1
+
+" Recommended key-mappings.
+inoremap <expr><CR>  neocomplcache#smart_close_popup() . "\<CR>"
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><C-y>  neocomplcache#close_popup()
+inoremap <expr><C-e>  neocomplcache#cancel_popup()
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
