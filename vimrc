@@ -1,7 +1,10 @@
 set nocompatible
+filetype off
 
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-silent! call pathogen#infect()
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
 
 filetype plugin indent on
 syntax on
