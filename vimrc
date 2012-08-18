@@ -6,6 +6,17 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/vimproc'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'scrooloose/syntastic'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'ujihisa/neco-ghc'
+Bundle 'eagletmt/ghcmod-vim'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'godlygeek/tabular'
+
+
 filetype plugin indent on
 syntax on
 
@@ -30,7 +41,7 @@ if has("gui_running")
 endif
 
 set background=dark
-colorscheme zenzike
+colorscheme wombat256mod
 set showmode
 set cursorline
 if has('cmdline_info')
@@ -68,9 +79,11 @@ set softtabstop=2
 set incsearch
 set autoread
 set autowrite
-set textwidth=70
+set textwidth=7
 set timeoutlen=1200
 set ttimeoutlen=50
+
+let mapleader=","
 
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 let g:haddock_browser="/usr/bin/chromium"
@@ -100,9 +113,8 @@ imap <F3> <C-R>=strftime("%d/%m/%y %H:%M:%S")<CR>
 map <F1> <Esc>
 map! <F1> <Esc>
 imap jj <Esc>
-nnoremap <Leader>a :Tab /
+nnoremap <Leader>t :Tab /
 nnoremap <space> i<space><esc>r
-
 
 
 if has("autocmd")

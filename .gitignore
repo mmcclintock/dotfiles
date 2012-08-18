@@ -7,5 +7,6 @@
 *.netr*
 *.png
 *.svg
+/vim/bundle/*
 /vim/swap/*
 /vim/backup/*
