@@ -1,23 +1,18 @@
 #!/bin/sh
 
-# load custom key map
-if [ -f $HOME/.xmodmap ]; then
-    /usr/bin/xmodmap $HOME/.xmodmap
-fi
+# fix the cursor
+xsetroot -cursor_name left_ptr
+unclutter &
 
 # add terminus font
 xset +fp /usr/share/fonts/local
 xset fp rehash
 
-# add xresources
+# load Xresources
 xrdb -merge ~/.Xresources
 
-# restore sound level
-alsactl restore -f ~/.asound
-
-# fix mouse
-xsetroot -cursor_name left_ptr
-unclutter &
+# star virtualbox client
+VBoxClient-all &
 
 # start xmonad
-xmonad
+exec xmonad
