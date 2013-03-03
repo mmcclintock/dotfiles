@@ -6,6 +6,7 @@ alias la='ls --color=auto -a'
 alias pac='sudo pacman -S'
 alias pacup='sudo pacman -Syu'
 alias pacr='sudo pacman -Rns'
+alias aur='sudo aura -A'
 
 PS1='[\u]\[\033[m\][\w]\[\033[m\] -> '
 

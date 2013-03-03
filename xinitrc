@@ -14,5 +14,8 @@ xrdb -merge ~/.Xresources
 # star virtualbox client
 VBoxClient-all &
 
+# restore wallpaper
+nitrogen --restore
+
 # start xmonad
 exec xmonad
