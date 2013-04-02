@@ -15,6 +15,7 @@ Bundle 'ujihisa/neco-ghc'
 Bundle 'eagletmt/ghcmod-vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'godlygeek/tabular'
+Bundle 'derekwyatt/vim-scala'
 
 
 filetype plugin indent on
@@ -26,9 +27,9 @@ set mouse=a
 set history=1000
 
 set backup
-set backupdir=/home/michael/.vim/backup
-set directory=/home/michael/.vim/swap
-set viewdir=/home/michael/.vim/swap
+set backupdir=/Users/michael/.vim/backup
+set directory=/Users/michael/.vim/swap
+set viewdir=/Users/michael/.vim/swap
 
 if has("gui_running")
     if has("gui_gtk2")
@@ -41,12 +42,12 @@ if has("gui_running")
 endif
 
 set background=dark
-colorscheme wombat256mod
+colorscheme jellybeans
 set showmode
 set cursorline
 if has('cmdline_info')
-    ""set ruler
-    ""set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
+    set ruler
+    set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
     set showcmd
 endif
 if has('statusline')
@@ -79,14 +80,13 @@ set softtabstop=2
 set incsearch
 set autoread
 set autowrite
-set textwidth=7
+set textwidth=70
 set timeoutlen=1200
 set ttimeoutlen=50
 
 let mapleader=","
 
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-let g:haddock_browser="/usr/bin/chromium"
 let g:neocomplcache_enable_at_startup = 1
 
 " Recommended key-mappings.
